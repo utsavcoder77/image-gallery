@@ -33,7 +33,11 @@ h2{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    cursor: pointer;
+}
+
+.gallery-container img:hover{
+    opacity: 0.8;
 }
 
 
@@ -69,13 +73,14 @@ h2{
     right: 0;
     bottom: 0;
     z-index: 2;
+    display: none;
 }
 
 .large-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: none;
+    
 }
 
 .large-image button{
@@ -90,5 +95,5 @@ h2{
 }
 
 .large-image button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(250, 247, 247, 0.8);
 }
