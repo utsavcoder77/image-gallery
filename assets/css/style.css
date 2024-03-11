@@ -1,130 +1,63 @@
 @import url('../css/reset.css');
-body, html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-}
-.mynav {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: Inter;
     display: flex;
-    justify-content: space-between;
-    padding: 15px 25px;
-    margin-top: 30px;
-}
-
-.mynav h1{
-    color: rgb(16, 16, 92);
-    font-size: 2.5rem;
-    font-style: italic;
-}
-
-.mynav h1 span{
-    color: rgb(16, 171, 232);
-}
-
-
-.mynav ul{
-    display: flex;
-    list-style-type: none;
-    gap: 52px;
-    justify-content: space-between;
-    
-}
-
-.mynav ul li a {
-    color: rgb(7, 7, 81);
-    font-size: larger;
-    font-size: 2rem;
-    text-decoration: none;
-
-}
-
-
-.full-size{
+    height: 100vh;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background-color: rgba(0,0,0,0.8);
-    z-index: 3;
-    display: flex;
-    padding: 15px;
-    display: none;
-}
-.full-size img{
-    max-height: 100%;
-    max-width: 100%;
+    align-items: center; 
+
 }
 
-.cross-button{
-    width: 40px;
-    position: fixed;
-    top: 2%;
-    left: 80%;
-    z-index: 33;
-    background: rgb(194, 187, 187);
-    border: none;
-    
+.gallery-outer{
+    max-width: 718px;
+    width: 100%;
 }
 
-.hero-banner{
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gallery-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 200px 100px 200px;
-    gap: 20px;
-    margin: 20px;
+    grid-template-rows: repeat(3, 1fr);
+    height: 482px;
+    gap: 5px;
 }
 
-.hero-banner img {
-    object-fit: cover;
-    object-position: center;
+.gallery-container img{
+    height: 100%;
     width: 100%;
-    cursor: pointer;
+    object-fit: cover;
+    
 }
 
-.hero-banner img:hover{
-    transform: scale(1.1);
-}
 
-.city {
+.gallery-container div:nth-child(1){
     grid-area: 1 / 1 / 2 / 2;
-    max-height: 100%;
 }
 
-
-.beach{
+.gallery-container div:nth-child(2){
     grid-area: 1 / 2 / 3 / 3;
-    height: 100%;
 }
 
-
-.sky {
+.gallery-container div:nth-child(3){
     grid-area: 1 / 3 / 2 / 4;
-    height: 100%;
 }
 
-.car {
-    grid-area: 2 / 1 / 5 / 2;
-    max-height: 100%;
+.gallery-container div:nth-child(4){
+    grid-area: 2 / 1 / 4 / 2;
 }
 
-
-.forest{
-    grid-area: 3 / 2 / 5 / 3;
-    max-height: 100%;
+.gallery-container div:nth-child(5){
+    grid-area: 3 / 2 / 4 / 3;
 }
 
-
-
-.sea{
-    grid-area: 2 / 3 / 5 / 4;
-    height: 100%;
+.gallery-container div:nth-child(6){
+    grid-area: 2 / 3 / 4 / 4;
 }
 
-@media screen and (max-width: 760px) {
-    .hero-banner {
-        display: flex;
-        flex-direction: column;
-    }
-}
