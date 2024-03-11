@@ -13,6 +13,7 @@
         largeImageContainer.style.display = "none";
     }
 
+    // this function has all the event listener
     const initilizeEvent = () => {
     const galleryImages = document.querySelectorAll(".gallery-container img");
     galleryImages.forEach((img) =>{
@@ -24,7 +25,7 @@
     closeButton.addEventListener("click", closeLargeImage);
     }
 
-
+    // 
     const populateImages = () => {
         
 
